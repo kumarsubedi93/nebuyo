@@ -37,6 +37,7 @@ class ViewComposerServiceProvider extends ServiceProvider
         view()->composer([
             'newui.layouts.header',
             'newui.home.banner_section',
+            'nebuyo.layouts.head-bar'
         ], 'App\Http\Composers\LayoutComposer@composerGlobal');
     }
 

@@ -1214,6 +1214,7 @@ if (!function_exists('static_asset')) {
     }
 }
 
+
 if (!function_exists('isUnique')) {
     /**
      * Generate an asset path for the application.
