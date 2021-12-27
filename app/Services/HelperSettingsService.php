@@ -22,7 +22,6 @@ class HelperSettingsService
         $this->activeFlashDeals = FlashDeal::where('status', 1)->get();
         $this->seoSetting = \App\SeoSetting::first();
         $this->generalSiteSetting = \App\GeneralSetting::first();
-
     }
 
     public function getBusinessSettings()
