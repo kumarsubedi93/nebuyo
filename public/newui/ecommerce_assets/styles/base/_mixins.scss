@@ -1,0 +1,45 @@
+// transition Use: @include transition(.5s ease-in-out);
+@mixin transition($args: 0.2s all linear) {
+    -webkit-transition: $args !important;
+    -moz-transition: $args !important;
+    -ms-transition: $args !important;
+    -o-transition: $args !important;
+    transition: $args !important;
+}
+
+//===============================================================
+//box-shadow Use: @include box-shadow(0, 0, 7px, 0, rgba(0, 0, 0, .46));
+@mixin box-shadow($top:0px, $left:0px, $blur:4px, $distance:2px, $color:null, $inset:rgba(0, 0, 0, .3)) {
+    -webkit-box-shadow:$top $left $blur $distance $inset;
+    -moz-box-shadow:$top $left $blur $distance $inset;
+    box-shadow:$top $left $blur $distance $inset;
+}
+
+
+
+//===============================================================
+//text-shadow Use: @include text-shadow(0, 0, 7px, 0, rgba(0, 0, 0, .46));
+@mixin text-shadow($top:0px, $left:2px, $blur:3px, $distance:5px, $color:null, $inset:rgba(0, 0, 0, .6)) {
+    -webkit-text-shadow: $left $blur $distance $inset;
+    -moz-text-shadow: $left $blur $distance $inset;
+    text-shadow: $left $blur $distance $inset;
+}
+
+
+
+//===============================================================
+// border-radius Use; @include border-radius(10px); }
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+
+
+
+//===============================================================
+// border-radius Use; @include border(10px); }
+@mixin border($size, $color) {
+    border: $size solid $color;
+}      

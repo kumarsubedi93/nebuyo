@@ -1,0 +1,283 @@
+/*///////////////////////////////////////////////////////////////////////
+Author: Sujan Manandhar
+Author URI: www.websitedevelopernepal.com
+*////////////////////////////////////////////////////////////////////////
+
+@import 'vendors/include_media';
+@import "base/index";
+@import "vendors/index";
+@import "components/index";
+@import "layout/index";
+@import "pages/index";
+
+
+
+/*///////////////////////////////////////////////////////////////////////
+Default Common Part Styling 
+///////////////////////////////////////////////////////////////////////*/
+
+	.pt-70 {
+		padding-top: 70px;
+	}
+
+	.pb-70 {
+		padding-bottom: 70px;
+	}
+
+	.black-transparentbg{
+		background: rgba($black, 0.7);
+
+		&:after  {
+			content: '\A';
+			position: absolute;
+			width: 100%; height:100%;
+			top:0; 
+			left:0;
+			background: rgba($black, 0.5);
+			@include transition();
+		}
+	}
+
+	.lightblack-transparentbg{
+		background: rgba($black, 0.5);
+	}
+
+	.center {
+		text-align: center;
+		p,
+		a,
+		h1,
+		h2,
+		h3 {
+			text-align: center;
+		}
+	}
+
+	img {
+		width: auto;
+	}
+
+	.text-editor {
+		a {
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+
+		img {
+			max-width:100%;
+			height:auto;
+			width: auto;
+			margin-top: 6px;
+		}
+
+		.alignright {
+			float: right;
+			margin-left: 20px;
+		}
+
+		.alignleft {
+			float: left;
+			margin-right: 20px;
+		}
+
+		ol,ul {
+			margin-top: 0px !important;
+			padding-start: 17px !important;
+			-webkit-padding-start: 17px !important;
+			-moz-padding-start: 17px !important;
+
+			li {
+				padding-left: 10px;
+				display: list-item !important;
+				padding-bottom: 0!important;
+				margin: 0!important;
+				font-size: 16px;
+			}
+		}
+
+		ul {
+			li {
+				list-style: disc;
+			}
+		}
+
+		h4 {
+			margin-top: 10px;
+		}
+	}
+
+	.mb-30 {
+		margin-bottom: 30px;
+	}
+
+	.pagination {
+
+		@include media ('<tablet') {
+			margin-top: 10px;
+		}
+
+		.wp-pagenavi span.current {
+			font-weight: 400;
+		}
+
+		span {
+			&:hover {
+				cursor: pointer;
+			}
+		}
+
+		a {
+			color: $theme-maincolor;
+			border-color: $theme-maincolor;
+
+			&:hover {
+				border-color: $theme-maincolor;
+				background: $theme-maincolor;
+				color: $white;
+			}
+		}
+
+		.pages,
+		.extend {
+			color: $theme-maincolor;
+			border-color: $theme-maincolor;
+		}
+
+		.current {
+			border-color:$theme-maincolor !important;
+			background: $theme-maincolor;
+			color: $white;
+		}
+
+		.prev,
+		.next {
+			display: none;
+		}
+	}
+
+
+	.text-center {
+		align:center !important;
+	}
+
+
+
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// 
+Styling
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// /*/
+
+
+
+
+/*///////////////////////////////////////////////////////////////////////
+Custom Part Styling 
+///////////////////////////////////////////////////////////////////////*/
+
+.text-primary {
+	color: $theme-maincolor!important;
+}
+
+.bg-primary {
+	background-color: $theme-maincolor!important;
+}
+
+.border-primary {
+	border-color: $theme-maincolor!important;
+}
+
+.btn-primary,
+.btn-primary-dark-w {
+	color: $white;
+	background-color: $theme-maincolor;
+	border-color: $theme-maincolor;
+
+	&:hover {
+		color: $white;
+		background-color: $theme-maincolor;
+		border-color: $theme-maincolor;
+	}
+}
+
+.btn-outline-primary {
+	color: $theme-maincolor;
+	border-color: $theme-maincolor;
+
+	&:hover {
+		color: $white!important;
+		background-color:$theme-maincolor;
+		border-color: $theme-maincolor;
+	}
+}
+
+.pagination-shop .page-link.current {
+	color: $white;
+	background-color: $theme-maincolor;
+
+	a {
+		&:hover {
+			color: $theme-maincolor;
+			background-color: transparent;
+		}
+	}
+}
+
+.btn-remove-focus {
+	&:focus{
+		background-color: $theme-maincolor!important;
+	}
+}
+
+span.pl-1.text-gray-90,
+a.d-block.font-size-13.py-3.pr-4.font-weight-bold.text-gray-90.ml-auto.flex-shrink-0,
+a.text-gray-90.position-relative.d-flex,
+.flex-horizontal-center.d-inline-flex.bg-primary.py-2.align-self-start.height-33.px-5.rounded-pill.text-gray-2.font-size-15.font-weight-bold.text-lh-1,
+.d-flex.align-items-center.flex-column.justify-content-center.bg-primary.rounded-pill.height-75.width-75.text-lh-1,
+.bg-primary.rounded-lg.px-6.py-2,
+.row.align-items-center,
+span.ec.ec-arrow-down-search {
+	color: $white!important;
+}
+
+i.font-size-22.ec.ec-shopping-bag {
+	color:#333e48;
+}
+
+.u-header-collapse__submenu .u-header-collapse__nav-list {
+	border-left: 2px solid $theme-maincolor;
+}
+
+.u-slick__pagination--long li.slick-active span,
+.link__icon-inner {
+	background-color: $theme-maincolor!important;
+}
+
+.link__icon-inner {
+	border-radius: 50%;
+}
+
+.section-title::after,
+.nav-tab .nav-link.active::after,
+.u-go-to {
+	background-color: $theme-maincolor;
+}
+
+.nav-classic .nav-link.active {
+	color:  $theme-maincolor;
+	border-bottom-color:  $theme-maincolor;
+}
+
+.nav-tab-pill .nav-link.active {
+	border-color:  $theme-maincolor;
+}
+
+
+// Second Page
+.col-xl.col.col-md-6.mt-md-8.mt-lg-10 {
+	margin:30px 0 !important;
+}
+
+.wdn-height  {
+	max-height: 350px;
+}

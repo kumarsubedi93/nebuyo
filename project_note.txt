@@ -1,0 +1,18 @@
+======================= Project Guideline ====================
+
+
+------------------ Date (2021-jane-30) -----------------
+Project Note
+1. run migration
+      php artisan migrate:status (optional)
+      php artisan migrate
+    NOTE:- There is 2 table need to migrate, For image, icon
+    Command: php artisan migrate --path=./database/migrations/2021_06_29_151006_add_banner_and_icon_to_sub_sub_categories.php
+    Command: php artisan migrate --path=./database/migrations/2021_06_29_151057_add_banner_and_icon_to_sub_categories.php
+--------------------------------------------------------
+Live: DONE
+--------------------------------------------------------
+Rajesh: DONE
+--------------------------------------------------------
+Jivan: done
+

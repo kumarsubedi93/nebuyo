@@ -1,0 +1,142 @@
+// Typography
+p {
+	color: $theme-supportcolor;
+	font-family: $roboto;
+	font-size: $paragraph-font;
+	font-weight: 300;
+	line-height: 24px;
+	margin: 0px; 
+	margin-bottom: 5px;
+	padding: 0px;
+}
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	margin: 0px;
+}
+
+
+
+h1{
+	color: $white;
+	font-family: $roboto;
+	font-size: $h1-font;
+	font-weight: 700;
+	line-height: $h1-font;
+	text-transform: uppercase;
+}
+
+
+
+h2 {
+	color: $theme-mainsecondcolor;
+	font-family: $lato;
+	font-size: $h2-font;
+	font-weight: 400;
+	line-height: $h2-font;
+	text-transform:uppercase;
+}
+
+
+
+h3 {
+	color: $theme-maincolor;
+	font-family: $lato;
+	font-size: $h3-font;
+	font-weight: 400;
+	line-height: 36px;
+	text-transform: uppercase;
+}
+
+
+h4{
+	color: $theme-maincolor;
+	font-family: $lato;
+	font-size: $h4-font;
+	font-weight: 400;
+	line-height: 26px;
+	text-transform: capitalize;
+}
+
+	h4 a {
+		@extend h4;
+
+		&:hover {
+			color: darken($theme-maincolor,10%);
+		}
+	}
+
+
+h5{
+	color: $white;
+	font-family: $lato;
+	font-weight: 400;
+	font-size: $h5-font;
+	line-height: 24px;
+	text-transform: capitalize;
+}
+
+h6{
+	color: $white;
+	font-family: $roboto;
+	font-weight: 300;
+	font-size: $h6-font;
+	line-height: 24px;
+	text-transform: capitalize;
+}
+
+label {
+	font-size: 13px;
+}
+
+
+small {
+	font-size: 15px;
+}
+
+
+b,
+strong {
+	font-weight: bold;
+}
+
+
+em {
+	font-style: italic;
+}
+
+
+::selection {
+	background: red;
+	/* WebKit/Blink Browsers */
+}
+
+
+::-moz-selection {
+	background: red;
+	/* Gecko Browsers */
+}
+
+
+ul {
+	padding: 0px;
+	margin: 0px;
+
+	li {
+		line-height:1.5;
+		font-size:16px;
+		font-family: $roboto;
+		font-weight: 300;
+		line-height: 24px;
+	}
+}
+
+
+img{
+
+}

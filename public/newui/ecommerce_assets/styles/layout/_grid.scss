@@ -1,0 +1,122 @@
+
+
+/*------------------------------------------------------*/
+// Bootstrap Media query Idea
+// col-xs = '<768px' = '<tablet'
+// col-sm = '>=768px' = '>=tablet','<992px' = '<sm-desktop'
+// col-md = '>=992px'='>=sm-destop','<1200px' 
+// col-lg = '>=1200px'
+/*------------------------------------------------------*/
+
+
+
+
+/*------------------------------------------------------*/
+// sets min width on container
+/*------------------------------------------------------*/
+
+.container {
+
+	width: 100%; 
+	margin: auto;
+   /* Custom, iPhone Retina */ 
+	@media only screen and (min-width : 320px) {
+		width: 100%;
+	}
+
+	/* Extra Small Devices, Phones */ 
+	@media only screen and (min-width : 480px) {
+
+	}
+
+	/* Small Devices, Tablets */
+	@media only screen and (min-width : 768px) {
+		width: 768px;
+		max-width: 768px;
+		margin: auto !important;
+
+
+	}
+
+	/* Medium Devices, Desktops */
+	@media only screen and (min-width : 992px) {
+		width: 992px;
+		max-width: 992px;
+		margin: auto;
+
+	}
+
+	/* Medium Devices, Desktops */
+	@media only screen and (min-width : 1024px) {
+		width: 1024px;
+		max-width: 1024px;
+		margin: auto;
+
+	}
+
+	/* Large Devices, Wide Screens */
+	@media only screen and (min-width : 1230px) {
+		width: 1230px;
+		max-width: 1230px;
+		width: 100%;
+		margin: auto;
+
+	}
+
+
+}
+
+
+
+
+/*------------------------------------------------------*/
+// sets max width on container
+/*------------------------------------------------------*/
+
+
+	@media only screen and (max-width : 1230px) {
+
+	}
+
+	@media only screen and (max-width : 1024px) {
+
+	}
+
+	/* Medium Devices, Desktops */
+	@media only screen and (max-width : 992px) {
+
+	}
+
+	/* Small Devices, Tablets */
+	@media only screen and (max-width : 768px) {
+		.contactform {
+			margin-top: 20px;
+		}
+	}
+
+	/* Extra Small Devices, Phones */ 
+	@media only screen and (max-width : 480px) {
+
+	}
+
+	@media only screen and (max-width : 500px) {
+		.col-xs-6 {
+			width: 100%;
+		}
+	}
+
+	@media only screen and (max-width : 400px) {
+		.col-xs-4 {
+			width: 100%
+		}
+
+		.top-footer .col-xs-6 {
+			width: 100%;
+		}
+	}
+
+	/* Custom, iPhone Retina */ 
+	@media only screen and (max-width : 320px) {
+
+	}
+

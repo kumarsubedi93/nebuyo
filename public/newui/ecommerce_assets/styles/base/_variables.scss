@@ -1,0 +1,53 @@
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////  
+// importing Roboto, Roboto Condensed Font
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+	@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700|Roboto:300,400,700');
+	@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700|Roboto:300,400,700');
+	@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700');
+	@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i');
+
+
+//===============================================================
+//fonts
+$roboto: 'Roboto', sans-serif;
+$lato: 'Lato', sans-serif;
+$merriweather: 'Merriweather', serif;
+$ptsans: 'PT Sans', sans-serif;
+
+//===============================================================
+//colors
+$theme-maincolor:#ea6c41;
+$theme-mainsecondcolor:#FF3300;
+$theme-supportcolor:#333;
+$background-color:#03557a;
+$footer-bordercolor:#504518;
+$border-color:#eee;
+
+$lightgreycolor:#f9f9f9;
+$white:#fff;
+$black:#000;
+$footer-color:#6a5b20;
+
+
+
+//===============================================================
+//media query breakpoints
+$breakpoints: (
+ 'xs-phone': 320px,
+ 'phone': 480px,
+ 'tablet': 768px,
+ 'sm-desktop': 992px,
+ 'desktop': 1024px,
+ 'widescreen': 1230px
+);
+
+
+
+//===============================================================
+//sizes
+$h1-font: 85px;
+$h2-font: 50px;
+$h3-font: 30px;
+$h4-font: 22px;
+$h5-font: 20px;
+$paragraph-font: 16px;

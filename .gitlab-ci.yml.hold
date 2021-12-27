@@ -1,0 +1,39 @@
+image: neputertech/gitlab-ci
+
+# Cache modules in between jobs
+cache:
+  key: ${CI_COMMIT_REF_SLUG}
+  #paths:
+  #  - vendor
+  #  - .env
+  #  - storage
+
+stages:
+  # - dependencies
+  # - deploy
+
+variables:
+  DOCKER_DRIVER: overlay2
+  SOURCE: "."
+
+# deploy_prod:
+#   stage: deploy
+#   before_script:
+#     - "mkdir -p ~/.ssh"
+#     - 'echo "${PERP_PRIVATE_KEY}" > ~/.ssh/id_rsa'
+#     - "chmod 600 ~/.ssh/id_rsa"
+#     - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
+#   script:
+#     - echo "Deploy to production server"
+#     - ssh ${PERP_SERVER} "cd ${PERP_DESTINATION}
+#       && git pull origin new-ui-backend
+#       && composer install -o
+#       && php artisan migrate --force
+#       && php artisan view:clear && php artisan route:clear
+#       && exit"
+#   environment:
+#     name: production
+#     url: http://perfectpasal.com
+#   only:
+#     - new-ui-backend
+

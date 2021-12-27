@@ -1,0 +1,275 @@
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #ffffff;
+	color: #232323;
+	font-family: $ptsans;
+	font-size: 14px;
+	font-weight: 400;
+	h1, h2, h3, h4, h5, h6 {
+		color: #232323;
+		font-style: normal;
+		line-height: 1.5;
+		letter-spacing: 1.1px;
+		margin: 0 0 8px;
+	}
+}
+
+h1 {
+	font-size: 26px;
+}
+
+h2 {
+	font-size: 24px;
+}
+
+h3 {
+	font-size: 22px;
+}
+
+h4 {
+	font-size: 20px;
+}
+
+h5 {
+	font-size: 18px;
+}
+
+h6 {
+	font-size: 16px;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+	color: #232323;
+}
+
+p {
+	a {
+		color: #232323;
+	}
+	line-height: 24px;
+	letter-spacing: 1.1px;
+	margin-bottom: 10px;
+}
+
+a {
+	color: #232323;
+	text-decoration: none;
+	&:hover, &:focus, &:active {
+		outline: none;
+	}
+}
+
+ul {
+	margin-bottom: 0;
+}
+
+figure {
+	margin-bottom: 6px;
+	position: relative;
+}
+
+img {
+	height: auto;
+	max-width: 100%;
+}
+
+strong {
+	color: #555555;
+}
+
+iframe {
+	border: none;
+	float: left;
+	width: 100%;
+}
+
+.wp-caption, .wp-caption-text, .gallery-caption, .bypostauthor {}
+
+.wp-caption {
+	&.alignleft, &.alignnone {
+		width: 100%;
+	}
+}
+
+select {
+	background-color: #f0eef0;
+	border: 1px solid #dfdfdf;
+	color: #232323;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 14px;
+	font-weight: 300;
+	height: 40px;
+	padding: 8px 12px;
+	width: 100%;
+}
+
+label {
+	color: #232323;
+	display: block;
+	font-weight: 400;
+	margin-bottom: 10px;
+}
+
+button {
+	border: none;
+}
+
+textarea {
+	background-color: #f2f2f2;
+	border: none;
+	box-sizing: border-box;
+	color: #aaa9a9;
+	display: inline-block;
+	font-size: 13px;
+	height: 30px;
+	line-height: 20px;
+	outline: none;
+	padding: 4px 6px;
+	vertical-align: middle;
+	box-shadow: none;
+}
+
+input {
+	&[type="text"], &[type="password"], &[type="datetime"], &[type="datetime-local"], &[type="date"], &[type="month"], &[type="time"], &[type="week"], &[type="number"], &[type="email"], &[type="url"], &[type="search"], &[type="tel"], &[type="color"] {
+		background-color: #f2f2f2;
+		border: none;
+		box-sizing: border-box;
+		color: #aaa9a9;
+		display: inline-block;
+		font-size: 13px;
+		height: 30px;
+		line-height: 20px;
+		outline: none;
+		padding: 4px 6px;
+		vertical-align: middle;
+		box-shadow: none;
+	}
+}
+
+.uneditable-input {
+	background-color: #f2f2f2;
+	border: none;
+	box-sizing: border-box;
+	color: #aaa9a9;
+	display: inline-block;
+	font-size: 13px;
+	height: 30px;
+	line-height: 20px;
+	outline: none;
+	padding: 4px 6px;
+	vertical-align: middle;
+	box-shadow: none;
+}
+
+input[type="submit"] {
+	outline: none;
+}
+
+form p {
+	float: left;
+	position: relative;
+	span i {
+		color: #474747;
+		left: 16px;
+		position: absolute;
+		top: 13px;
+	}
+}
+
+option {
+	padding: 5px 15px;
+}
+
+li {
+	line-height: 28px;
+	list-style: inside none disc;
+}
+
+ul ul {
+	margin-left: 20px;
+}
+
+ol {
+	float: none;
+	list-style: outside none decimal;
+	padding-left: 15px;
+	ol {
+		margin-left: 20px;
+	}
+	li {
+		list-style: outside none decimal;
+		width: 100%;
+	}
+}
+
+table {
+	background-color: transparent;
+	max-width: 100%;
+}
+
+th {
+	text-align: left;
+}
+
+table {
+	margin-bottom: 15px;
+	width: 100%;
+	> {
+		thead > tr > th, tbody > tr > th, tfoot > tr > th, thead > tr > td, tbody > tr > td, tfoot > tr > td {
+			border: 1px solid #dddddd;
+			line-height: 1.5;
+			padding-left: 3px;
+			text-align: center;
+			vertical-align: top;
+		}
+	}
+	thead tr th {
+		border-top: 1px solid #dddddd;
+		text-align: center;
+		text-transform: capitalize;
+	}
+}
+
+.table > {
+	caption + thead > tr:first-child > th, colgroup + thead > tr:first-child > th, thead:first-child > tr:first-child > th, caption + thead > tr:first-child > td, colgroup + thead > tr:first-child > td, thead:first-child > tr:first-child > td {
+		border-top: 1px solid #dddddd;
+	}
+}
+
+table > {
+	thead > tr > th {
+		border-bottom: 2px solid #dddddd;
+		vertical-align: bottom;
+	}
+	caption + thead > tr:first-child > th, colgroup + thead > tr:first-child > th, thead:first-child > tr:first-child > th, caption + thead > tr:first-child > td, colgroup + thead > tr:first-child > td, thead:first-child > tr:first-child > td {
+		border-bottom: 0 none;
+	}
+	tbody + tbody {
+		border-top: 2px solid #dddddd;
+	}
+}
+
+.table > {
+	thead > tr > th, tbody > tr > th, tfoot > tr > th, thead > tr > td, tbody > tr > td, tfoot > tr > td {
+		padding: 6px 10px;
+	}
+}
+
+p ins {
+	color: #999;
+}
+
+dl dd {
+	margin-left: 20px;
+}
+
+address {
+	font-style: italic;
+}
